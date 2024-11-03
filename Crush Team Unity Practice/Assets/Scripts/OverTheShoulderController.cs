@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
  
 [RequireComponent(typeof(CharacterController))]
-public class FPSController : MonoBehaviour
+public class OverTheShoulderController : MonoBehaviour
 {
     public Camera playerCamera;
     public float walkSpeed = 6f;
@@ -13,7 +13,7 @@ public class FPSController : MonoBehaviour
  
  
     public float lookSpeed = 2f;
-    public float lookXLimit = 45f;
+    public float lookXLimit = 60f;
  
  
     Vector3 moveDirection = Vector3.zero;
@@ -77,3 +77,4 @@ public class FPSController : MonoBehaviour
         #endregion
     }
 }
+ 
