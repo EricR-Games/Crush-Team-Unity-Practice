@@ -30,7 +30,8 @@ public class Scrap : MonoBehaviour
 
     public void OpenChest()
     {
-        Debug.Log("Opened Chest");
+        Debug.Log("Picked Up Scrap");
         source.PlayOneShot(clip);
+        gameObject.SetActive(false);
     }
 }
